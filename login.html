@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login | Budget Tracker</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/header-footer.css" />
+  <link rel="stylesheet" href="css/login.css" /> 
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+        <h1 class="logo">
+            <a href="index.html">Budget Tracker</a>
+        </h1>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="content-wrapper"> 
+    <div class="form-container"> 
+      <h2>Login to Your Account</h2>
+      <form id="loginForm" class="form-style"> 
+        <label for="login-email">Email Address</label>
+        <input type="email" id="login-email" name="email" placeholder="you@example.com" required />
+
+        <label for="login-password">Password</label>
+        <input type="password" id="login-password" name="password" placeholder="••••••••" required />
+
+        <button type="submit" class="btn-primary">Login</button>
+      </form>
+      <p>Don't have an account? <a href="register.html">Register here</a></p>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 Budget Tracker. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Firebase Authentication Script -->
+  <script type="module" src="js/authentication.js"></script>
+</body>
+</html>
